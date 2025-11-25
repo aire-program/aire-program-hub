@@ -2,8 +2,8 @@
   --bg: #f5f8fb;
   --ink: #132235;
   --muted: #536479;
-  --accent: #0f63b3;
-  --accent-soft: #e5effa;
+  --accent: #09728b;
+  --accent-soft: #e2f1f4;
   --card: #ffffff;
   --border: #d6dfeb;
   --shadow: 0 8px 30px rgba(13, 33, 61, 0.08);
@@ -55,9 +55,9 @@ a:focus-visible {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.96);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--border);
+  background: var(--accent);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
 .header-inner {
@@ -71,7 +71,7 @@ a:focus-visible {
 .site-title {
   font-weight: 700;
   letter-spacing: -0.01em;
-  color: var(--ink);
+  color: #fff;
 }
 
 .main-nav ul {
@@ -84,18 +84,21 @@ a:focus-visible {
 
 .main-nav a {
   display: inline-block;
-  padding: 0.4rem 0.6rem;
-  border-radius: 999px;
-  color: var(--ink);
+  padding: 0.45rem 0.55rem;
+  color: #fff;
   font-weight: 600;
-  transition: background 0.2s ease, color 0.2s ease;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  transition: border-color 0.2s ease, opacity 0.2s ease;
 }
 
 .main-nav a:hover,
 .main-nav a:focus-visible {
-  background: var(--accent-soft);
-  color: var(--accent);
+  border-color: rgba(255, 255, 255, 0.8);
+  opacity: 0.95;
   text-decoration: none;
+  outline: 2px solid #fff;
+  outline-offset: 2px;
 }
 
 .container {
