@@ -86,6 +86,7 @@ a:focus-visible {
   position: relative;
   display: inline-block;
   padding: 0.35rem 0.4rem;
+  font-size: 0.95rem;
   color: #fff;
   font-weight: 600;
   white-space: nowrap;
