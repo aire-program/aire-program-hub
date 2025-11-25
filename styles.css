@@ -321,6 +321,13 @@ h3 {
   align-items: start;
 }
 
+.two-column {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 2.25rem;
+  align-items: start;
+}
+
 .callout {
   background: #fff;
   border-left: 5px solid var(--accent);
@@ -383,7 +390,8 @@ h3 {
   }
 
   .hero-grid,
-  .usage-grid {
+  .usage-grid,
+  .two-column {
     grid-template-columns: 1fr;
   }
 
