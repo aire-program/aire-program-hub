@@ -2,17 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Applied AI Innovation & Research Enablement (AIRE) Program</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Applied AI Innovation & Research Enablement (AIRE) Program – College of Social Science, Michigan State University. A coordinated initiative that connects AI literacy, research experimentation, and institutional analytics.">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
-
 <body>
-  <header>
-    <div class="nav-inner">
-      <div class="nav-title">Applied AI Innovation & Research Enablement (AIRE) Program</div>
-      <nav aria-label="Main navigation">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">AIRE</div>
+        <div class="brand-text">
+          <p class="eyebrow">College of Social Science · Michigan State University</p>
+          <p class="brand-title">Applied AI Innovation &amp; Research Enablement Program</p>
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
         <ul>
           <li><a href="#overview">Overview</a></li>
           <li><a href="#pillars">Program Pillars</a></li>
@@ -24,190 +31,202 @@
     </div>
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero" id="overview">
-      <div class="hero-tagline">College of Social Science · Michigan State University</div>
-      <h1>Applied AI Innovation & Research Enablement (AIRE) Program</h1>
-      <p class="hero-subtitle">
-        The Applied AI Innovation & Research Enablement (AIRE) Program is a college-level initiative in the College of Social Science at Michigan State University. It is designed to support responsible, effective use of artificial intelligence across teaching, research, and academic operations by providing a coherent set of learning, experimentation, and analytics resources.
-      </p>
-      <p class="hero-meta">
-        AIRE brings together AI literacy, research experimentation, and institutional analytics into a coordinated program. It helps faculty, staff, students, and leadership develop practical skills, prototype new workflows, and base decisions about AI adoption on clear evidence rather than hype. Originally developed on internal MSU systems and later mirrored to GitHub, AIRE illustrates how a large academic unit can build an AI enablement ecosystem that is both governed and adaptable.
-      </p>
-
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="https://applied-ai-literacy.github.io/hub/" target="_blank" rel="noopener noreferrer">
-          Visit AIRE Literacy Hub
-        </a>
-        <a class="btn btn-ghost" href="#pillars">
-          Explore AIRE Components
-        </a>
-      </div>
-    </section>
-
-    <!-- PILLARS -->
-    <section id="pillars">
-      <div class="section-kicker">Program Structure</div>
-      <h2>Three Coordinated Pillars</h2>
-      <p class="section-lead">
-        AIRE is structured around three interconnected components that serve different audiences while working toward the same goal: responsible, well-governed use of AI across the college. Together they form the backbone of a program that combines learning design, research enablement, and analytics-informed decision-making.
-      </p>
-
-      <div class="pillars">
-        <!-- Pillar 1 -->
-        <article class="pillar-card">
-          <div class="pillar-label">Pillar One</div>
-          <h3 class="pillar-title">AIRE Literacy Hub</h3>
-          <p class="pillar-body">
-            The AIRE Literacy Hub provides structured learning pathways, tutorials, and teaching materials to help faculty, staff, students, and researchers develop practical, responsible AI skills. It focuses on widely available tools and emphasizes ethics, accessibility, and measurable learning impact so that AI adoption supports teaching, advising, and student success rather than distracting from core learning objectives.
-          </p>
-          <div class="pillar-links">
-            <a class="chip-link" href="https://applied-ai-literacy.github.io/hub/" target="_blank" rel="noopener noreferrer">
-              Open Literacy Hub
-            </a>
-          </div>
-        </article>
-
-        <!-- Pillar 2 -->
-        <article class="pillar-card">
-          <div class="pillar-label">Pillar Two</div>
-          <h3 class="pillar-title">AIRE Researcher Sandbox</h3>
-          <p class="pillar-body">
-            The AIRE Researcher Sandbox is a method-focused environment where researchers and graduate students can experiment with AI-enabled workflows in a controlled, well-documented setting. Reproducible notebooks and Colab-ready modules walk users through OCR, entity recognition, embeddings, retrieval-augmented generation, and evaluation strategies that can be adapted to real research projects. The emphasis is on transparent, reusable workflows that labs and research teams can extend and incorporate into their own protocols.
-          </p>
-          <div class="pillar-links">
-            <a class="chip-link" href="https://github.com/aire-program/aire-researcher-sandbox" target="_blank" rel="noopener noreferrer">
-              View Sandbox Repository
-            </a>
-          </div>
-        </article>
-
-        <!-- Pillar 3 -->
-        <article class="pillar-card">
-          <div class="pillar-label">Pillar Three</div>
-          <h3 class="pillar-title">AIRE Impact Dashboard</h3>
-          <p class="pillar-body">
-            The AIRE Impact Dashboard is the program’s decision-intelligence layer. Built with Streamlit and Plotly, it consolidates synthetic mirrors of participation, confidence, and readiness data to show how AI literacy efforts are developing across departments and roles. The internal MSU deployment ran on secure college data; this public version preserves the analytic model and key performance indicators using carefully designed synthetic datasets so that program structure, indicators, and reporting patterns can be shared without exposing institutional records.
-          </p>
-          <div class="pillar-links">
-            <a class="chip-link" href="https://github.com/aire-program/aire-impact-dashboard" target="_blank" rel="noopener noreferrer">
-              View Dashboard Repository
-            </a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- USAGE -->
-    <section id="usage">
-      <div class="section-kicker">Practice & Use</div>
-      <h2>How AIRE Is Used Across the College</h2>
-
-      <div class="two-column">
+  <main id="main">
+    <section id="overview" class="section hero muted">
+      <div class="container hero-grid">
         <div>
-          <p>
-            In practice, AIRE supports different kinds of work for different audiences. Instructors use the Literacy Hub to embed responsible AI activities into courses and advising, aligning classroom practice with emerging institutional expectations. Researchers and graduate students work in the Sandbox to prototype AI-enabled workflows on their own data before bringing them into funded projects, collaborations, and publications. Leadership teams consult the Impact Dashboard when planning professional development, organizing faculty support, and allocating resources for future terms.
-          </p>
-          <p>
-            Because these components share a common language of governance, documentation, and analytics, it becomes easier to see how learning activities, research practices, and institutional decisions relate. The same indicators that appear in the dashboard feed back into the design of new workshops, resources, and sandbox modules, creating a continuous cycle of learning, experimentation, and improvement that can be adjusted as adoption patterns and needs change over time.
-          </p>
+          <p class="eyebrow">College of Social Science · Michigan State University</p>
+          <h1>Applied AI Innovation &amp; Research Enablement (AIRE) Program</h1>
+          <div class="hero-body">
+            <p>The Applied AI Innovation &amp; Research Enablement (AIRE) Program is a college-level initiative in the College of Social Science at Michigan State University. It is designed to support responsible, effective use of artificial intelligence across teaching, research, and academic operations by providing a coherent set of learning, experimentation, and analytics resources.</p>
+            <p>AIRE brings together AI literacy, research experimentation, and institutional analytics into a coordinated program. It helps faculty, staff, students, and leadership develop practical skills, prototype new workflows, and base decisions about AI adoption on clear evidence rather than hype.</p>
+          </div>
+          <p class="meta">Originally developed on internal MSU systems and later mirrored to GitHub, AIRE illustrates how a large academic unit can build an AI enablement ecosystem that is both governed and adaptable, bringing together learning resources, experimentation environments, and data-informed program management.</p>
+          <div class="action-row">
+            <a class="button primary" href="https://applied-ai-literacy.github.io/hub/" target="_blank" rel="noopener noreferrer">
+              Visit AIRE Literacy Hub
+            </a>
+            <a class="button ghost" href="#pillars">Explore AIRE Components</a>
+          </div>
         </div>
-
-        <aside class="callout">
-          <strong>Learning, Experimentation, and Insight</strong><br>
-          AIRE is deliberately designed as a cycle. Individuals and departments build skills through the Literacy Hub. Research teams experiment with methods and workflows in the Sandbox. Leadership uses the Impact Dashboard to understand where responsible AI practice is taking root, where adoption is uneven, and where additional support or mentoring is needed. The result is a program that can evolve based on real usage patterns, readiness indicators, and measurable learning impact rather than one-off initiatives.
-        </aside>
-      </div>
-
-      <div class="audience-grid" aria-label="Audience-specific starting points">
-        <div class="audience-card">
-          <h3>Leadership & Administration</h3>
+        <div class="hero-card">
+          <h2 class="title-with-icon">
+            <span class="icon" aria-hidden="true" data-lucide="circles"></span>
+            A Coordinated AI Enablement Ecosystem
+          </h2>
           <p>
-            Leadership, department chairs, and program directors use the AIRE Impact Dashboard to understand participation patterns, confidence gains, departmental readiness, and emerging needs. The dashboard provides a concise view of where AI literacy efforts are taking hold, where adoption is uneven, and which units may require prioritized support or targeted professional development. It supports evidence-informed planning conversations and helps align investments in training with institutional priorities.
+            AIRE connects three complementary pillars: an AI literacy hub for teaching and professional learning, a researcher sandbox for method-focused experimentation, and an impact dashboard that surfaces program-level indicators for leadership. Together they form a practical model for AI adoption that can be adapted across units and institutions.
           </p>
-        </div>
-
-        <div class="audience-card">
-          <h3>Researchers & Graduate Students</h3>
-          <p>
-            Researchers and graduate students use the AIRE Researcher Sandbox to trial AI-enabled workflows in a reproducible environment. Notebooks illustrate complete pipelines—from data preparation to evaluation—that can be adapted to lab-specific datasets and research questions. The emphasis is on practical methods, transparent assumptions, and workflows that can be documented in grant proposals, research protocols, and publications.
-          </p>
-        </div>
-
-        <div class="audience-card">
-          <h3>Faculty, Staff & Students</h3>
-          <p>
-            Faculty, staff, and students use the AIRE Literacy Hub to explore tutorials, micro-courses, and teaching-ready materials that introduce AI in ways that are practical, ethical, and grounded in disciplinary practice. The hub supports introductory exploration, course integration, and ongoing professional learning without assuming a technical background, making it possible to scale AI literacy across diverse roles and programs.
-          </p>
+          <ul class="checklist">
+            <li>Supports teaching, research, and academic operations</li>
+            <li>Combines learning resources, experimentation, and analytics</li>
+            <li>Aligns with governance, privacy, and equity commitments</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- GOVERNANCE -->
-    <section id="governance">
-      <div class="section-kicker">Governance</div>
-      <h2>Governance, Data, and Responsible AI</h2>
-
-      <p class="section-lead">
-        AIRE treats governance and data stewardship as core design elements rather than afterthoughts. Internal deployments use college data under existing institutional policies, while public mirrors use synthetic datasets so that methods and structures can be shared openly without exposing confidential information.
-      </p>
-
-      <p>Across the Literacy Hub, Researcher Sandbox, and Impact Dashboard, the program emphasizes:</p>
-
-      <ul>
-        <li>clear documentation of how AI tools are used in teaching, research, and operations</li>
-        <li>attention to privacy, consent, and data minimization in internal workflows</li>
-        <li>transparent use of synthetic data in public examples and demonstrations</li>
-        <li>reproducible methods that can be reviewed, adapted, and audited</li>
-        <li>alignment with institutional values around equity, accessibility, and inclusion</li>
-        <li>ongoing evaluation of learning impact and readiness to inform future program design</li>
-      </ul>
+    <section id="pillars" class="section">
+      <div class="container">
+        <p class="eyebrow">Program Structure</p>
+        <h2>Three Coordinated Pillars</h2>
+        <p class="lead">AIRE is structured around three interconnected components that serve different audiences while working toward the same goal: responsible, well-governed use of AI across the college. Together they form the backbone of a program that combines learning design, research enablement, and analytics-informed decision-making.</p>
+        <div class="card-grid pillars">
+          <article class="card">
+            <p class="pill-label">Pillar One</p>
+            <h3 class="title-with-icon">
+              <span class="icon" aria-hidden="true" data-lucide="book-open-text"></span>
+              AIRE Literacy Hub
+            </h3>
+            <p>The AIRE Literacy Hub provides structured learning pathways, tutorials, and teaching materials to help faculty, staff, students, and researchers develop practical, responsible AI skills. It focuses on widely available tools and emphasizes ethics, accessibility, and measurable learning impact so that AI adoption supports teaching, advising, and student success rather than distracting from core learning objectives.</p>
+            <div class="chip-row">
+              <a class="chip" href="https://applied-ai-literacy.github.io/hub/" target="_blank" rel="noopener noreferrer">Open Literacy Hub</a>
+            </div>
+          </article>
+          <article class="card">
+            <p class="pill-label">Pillar Two</p>
+            <h3 class="title-with-icon">
+              <span class="icon" aria-hidden="true" data-lucide="flask-conical"></span>
+              AIRE Researcher Sandbox
+            </h3>
+            <p>The AIRE Researcher Sandbox is a method-focused environment where researchers and graduate students can experiment with AI-enabled workflows in a controlled, well-documented setting. Reproducible notebooks and Colab-ready modules walk users through OCR, entity recognition, embeddings, retrieval-augmented generation, and evaluation strategies that can be adapted to real research projects. The emphasis is on transparent, reusable workflows that labs and research teams can extend and incorporate into their own protocols.</p>
+            <div class="chip-row">
+              <a class="chip" href="https://github.com/aire-program/aire-researcher-sandbox" target="_blank" rel="noopener noreferrer">View Sandbox Repository</a>
+            </div>
+          </article>
+          <article class="card">
+            <p class="pill-label">Pillar Three</p>
+            <h3 class="title-with-icon">
+              <span class="icon" aria-hidden="true" data-lucide="bar-chart-3"></span>
+              AIRE Impact Dashboard
+            </h3>
+            <p>The AIRE Impact Dashboard is the program’s decision-intelligence layer. Built with Streamlit and Plotly, it consolidates synthetic mirrors of participation, confidence, and readiness data to show how AI literacy efforts are developing across departments and roles. The internal MSU deployment ran on secure college data; this public version preserves the analytic model and key performance indicators using carefully designed synthetic datasets so that program structure, indicators, and reporting patterns can be shared without exposing institutional records.</p>
+            <div class="chip-row">
+              <a class="chip" href="https://github.com/aire-program/aire-impact-dashboard" target="_blank" rel="noopener noreferrer">View Dashboard Repository</a>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- REPOS -->
-    <section id="repos">
-      <div class="section-kicker">Code & Resources</div>
-      <h2>Repositories and Entry Points</h2>
+    <section id="usage" class="section muted">
+      <div class="container">
+        <p class="eyebrow">Practice &amp; Use</p>
+        <h2>How AIRE Is Used Across the College</h2>
+        <div class="usage-grid">
+          <div>
+            <p>In practice, AIRE supports different kinds of work for different audiences. Instructors use the Literacy Hub to embed responsible AI activities into courses and advising, aligning classroom practice with emerging institutional expectations. Researchers and graduate students work in the Sandbox to prototype AI-enabled workflows on their own data before bringing them into funded projects, collaborations, and publications. Leadership teams consult the Impact Dashboard when planning professional development, organizing faculty support, and allocating resources for future terms.</p>
+            <p>Because these components share a common language of governance, documentation, and analytics, it becomes easier to see how learning activities, research practices, and institutional decisions relate. The same indicators that appear in the dashboard feed back into the design of new workshops, resources, and sandbox modules, creating a continuous cycle of learning, experimentation, and improvement that can be adjusted as adoption patterns and needs change over time.</p>
+          </div>
+          <aside class="callout">
+            <h3 class="title-with-icon">
+              <span class="icon" aria-hidden="true" data-lucide="refresh-cw"></span>
+              Learning, Experimentation, and Insight
+            </h3>
+            <p>AIRE is deliberately designed as a cycle. Individuals and departments build skills through the Literacy Hub. Research teams experiment with methods and workflows in the Sandbox. Leadership uses the Impact Dashboard to understand where responsible AI practice is taking root, where adoption is uneven, and where additional support or mentoring is needed. The result is a program that can evolve based on real usage patterns, readiness indicators, and measurable learning impact rather than one-off initiatives.</p>
+          </aside>
+        </div>
 
-      <p class="section-lead">
-        The AIRE Program uses a set of public GitHub repositories to mirror internal systems and support collaboration with partners and other institutions. These repositories show how the program connects literacy, experimentation, and analytics into a coherent approach to AI enablement.
-      </p>
+        <div class="audience-grid" aria-label="Audience-specific starting points">
+          <div class="audience-card">
+            <h3>Leadership &amp; Administration</h3>
+            <p>Leadership, department chairs, and program directors use the AIRE Impact Dashboard to understand participation patterns, confidence gains, departmental readiness, and emerging needs. The dashboard provides a concise view of where AI literacy efforts are taking hold, where adoption is uneven, and which units may require prioritized support or targeted professional development. It supports evidence-informed planning conversations and helps align investments in training with institutional priorities.</p>
+          </div>
+          <div class="audience-card">
+            <h3>Researchers &amp; Graduate Students</h3>
+            <p>Researchers and graduate students use the AIRE Researcher Sandbox to trial AI-enabled workflows in a reproducible environment. Notebooks illustrate complete pipelines—from data preparation to evaluation—that can be adapted to lab-specific datasets and research questions. The emphasis is on practical methods, transparent assumptions, and workflows that can be documented in grant proposals, research protocols, and publications.</p>
+          </div>
+          <div class="audience-card">
+            <h3>Faculty, Staff &amp; Students</h3>
+            <p>Faculty, staff, and students use the AIRE Literacy Hub to explore tutorials, micro-courses, and teaching-ready materials that introduce AI in ways that are practical, ethical, and grounded in disciplinary practice. The hub supports introductory exploration, course integration, and ongoing professional learning without assuming a technical background, making it possible to scale AI literacy across diverse roles and programs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <ul>
-        <li>
-          <strong>AIRE Literacy Hub</strong> – public curriculum site and associated repositories for tutorials, pathways, and teaching materials focused on responsible AI use.<br>
-          <a href="https://applied-ai-literacy.github.io/hub/" target="_blank" rel="noopener noreferrer">
-            Visit the Literacy Hub
-          </a>
-        </li>
+    <section id="governance" class="section">
+      <div class="container">
+        <p class="eyebrow">Governance</p>
+        <h2>Governance, Data, and Responsible AI</h2>
+        <p class="lead">AIRE treats governance and data stewardship as core design elements rather than afterthoughts. Internal deployments use college data under existing institutional policies, while public mirrors use synthetic datasets so that methods and structures can be shared openly without exposing confidential information.</p>
+        <div class="two-column">
+          <div>
+            <p>Across the Literacy Hub, Researcher Sandbox, and Impact Dashboard, the program emphasizes:</p>
+            <ul>
+              <li>clear documentation of how AI tools are used in teaching, research, and operations</li>
+              <li>attention to privacy, consent, and data minimization in internal workflows</li>
+              <li>transparent use of synthetic data in public examples and demonstrations</li>
+              <li>reproducible methods that can be reviewed, adapted, and audited</li>
+              <li>alignment with institutional values around equity, accessibility, and inclusion</li>
+              <li>ongoing evaluation of learning impact and readiness to inform future program design</li>
+            </ul>
+          </div>
+          <aside class="callout">
+            <h3 class="title-with-icon">
+              <span class="icon" aria-hidden="true" data-lucide="shield-check"></span>
+              Program-Level Safeguards
+            </h3>
+            <p>The AIRE Program is designed so that new tools, workflows, and teaching practices can be introduced without compromising institutional commitments. Synthetic datasets and public mirrors make it possible to share methods and examples widely, while internal deployments remain aligned with existing data governance and risk review processes.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
 
-        <li>
-          <strong>AIRE Researcher Sandbox</strong> – notebooks and workflows for AI-enabled research experimentation, including OCR, entity recognition, embeddings, retrieval-augmented generation, and evaluation patterns.<br>
-          <a href="https://github.com/aire-program/aire-researcher-sandbox" target="_blank" rel="noopener noreferrer">
-            View the Sandbox repository
-          </a>
-        </li>
-
-        <li>
-          <strong>AIRE Impact Dashboard</strong> – Streamlit application, schemas, and synthetic datasets used to model institutional analytics for AI literacy, readiness, and adoption across departments and roles.<br>
-          <a href="https://github.com/aire-program/aire-impact-dashboard" target="_blank" rel="noopener noreferrer">
-            View the Dashboard repository
-          </a>
-        </li>
-      </ul>
-
-      <p>
-        Additional documentation and architecture notes are available in the individual repositories. Together, they provide a reference model for building AI literacy programs that combine learning design, research enablement, and analytics-informed decision-making in a large academic unit.
-      </p>
+    <section id="repos" class="section muted">
+      <div class="container">
+        <p class="eyebrow">Code &amp; Resources</p>
+        <h2>Repositories and Entry Points</h2>
+        <p class="lead">The AIRE Program uses a set of public GitHub repositories to mirror internal systems and support collaboration with partners and other institutions. These repositories show how the program connects literacy, experimentation, and analytics into a coherent approach to AI enablement.</p>
+        <div class="card-grid repos">
+          <article class="card">
+            <h3 class="title-with-icon">
+              <span class="icon" aria-hidden="true" data-lucide="graduation-cap"></span>
+              AIRE Literacy Hub
+            </h3>
+            <p>Public curriculum site and associated repositories for tutorials, pathways, and teaching materials focused on responsible AI use in teaching, learning, and professional development.</p>
+            <a class="chip" href="https://applied-ai-literacy.github.io/hub/" target="_blank" rel="noopener noreferrer">
+              Visit the Literacy Hub
+            </a>
+          </article>
+          <article class="card">
+            <h3 class="title-with-icon">
+              <span class="icon" aria-hidden="true" data-lucide="flask-conical"></span>
+              AIRE Researcher Sandbox
+            </h3>
+            <p>Notebooks and workflows for AI-enabled research experimentation, including OCR, entity recognition, embeddings, retrieval-augmented generation, and evaluation patterns that can be adapted to discipline-specific datasets.</p>
+            <a class="chip" href="https://github.com/aire-program/aire-researcher-sandbox" target="_blank" rel="noopener noreferrer">
+              View the Sandbox repository
+            </a>
+          </article>
+          <article class="card">
+            <h3 class="title-with-icon">
+              <span class="icon" aria-hidden="true" data-lucide="bar-chart-3"></span>
+              AIRE Impact Dashboard
+            </h3>
+            <p>Streamlit application, schemas, and synthetic datasets used to model institutional analytics for AI literacy, readiness, and adoption across departments and roles, mirroring the indicators used in the internal MSU deployment.</p>
+            <a class="chip" href="https://github.com/aire-program/aire-impact-dashboard" target="_blank" rel="noopener noreferrer">
+              View the Dashboard repository
+            </a>
+          </article>
+        </div>
+        <p class="meta">Additional documentation and architecture notes are available in the individual repositories. Together, they provide a reference model for building AI literacy programs that combine learning design, research enablement, and analytics-informed decision-making in a large academic unit.</p>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <div class="footer-inner">
-      <div>© Applied AI Innovation & Research Enablement (AIRE) Program, College of Social Science, Michigan State University.</div>
-      <div>Public mirrors are provided under open licensing to support transparency, collaboration, and reproducible AI methods.</div>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© Applied AI Innovation &amp; Research Enablement (AIRE) Program, College of Social Science, Michigan State University.</p>
+      <p>Public mirrors are provided under open licensing to support transparency, collaboration, and reproducible AI methods.</p>
     </div>
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (window.lucide) {
+        window.lucide.createIcons();
+      }
+    });
+  </script>
 </body>
 </html>
