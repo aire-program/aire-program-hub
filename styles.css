@@ -262,7 +262,9 @@ h3 {
 }
 
 .card-grid.pillars {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  align-items: stretch;
 }
 
 .card-grid.audiences {
@@ -418,5 +420,26 @@ h3 {
 @media (min-width: 960px) {
   .repo-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 720px) {
+  .card-grid.pillars {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .card-grid.pillars .card {
+    height: 100%;
+  }
+}
+
+@media (min-width: 1140px) {
+  .card-grid.pillars {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .card-grid.pillars .card {
+    padding: 1.15rem;
   }
 }
